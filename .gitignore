@@ -1,0 +1,6 @@
+# exclude all generated local code
+images_test/
+venv/
+song_test/
+
+.DS_Store

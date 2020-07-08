@@ -1,0 +1,97 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+</head>
+
+<body>
+  <div>
+    <div class='center'>
+      <div class='title'>Classify Rondents Images 🐿️</div>
+      <p>
+        Use images of <strong>capybara</strong>, <strong>chiendeprairie</strong>, <strong>chinchilla</strong>,
+        <strong>chipmunk</strong>, <strong>ecureuil</strong>, <strong>loir</strong> or <strong>ragondin</strong>.
+      </p>
+      <div class='content'>
+        <div class='no-display'>
+          <input id='file-input' class='no-display' type='file' name='file' accept='image/*'
+            onchange='showPicked(this)'>
+        </div>
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+        <div class='upload-label'>
+          <label id='upload-label'>No file chosen</label>
+        </div>
+        <div>
+          <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        </div>
+        <div class='analyze'>
+          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        </div>
+        <div class='result-label'>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Accuracy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label id='result-label'></label></td>
+                <td><label id='result-accuracy'></label></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class='center'>
+      <hr />
+    </div>
+
+    <div class='center'>
+      <div class='title'>Classify Audio Musics 🎶</div>
+      <p>
+        Use audio music file of <strong>classic</strong>, <strong>electro-swing</strong>, <strong>jazz</strong>,
+        <strong>trance</strong> or <strong>trap</strong>.
+      </p>
+      <div class='content'>
+        <div class='no-display'>
+          <input id='file-input-audio' class='no-display' type='file' name='file' accept='audio/*'
+            onchange='showPickedAudio(this)'>
+        </div>
+        <button class='choose-file-button-audio' type='button' onclick='showPickerAudio()'>Select Audio</button>
+        <div class='upload-label'>
+          <label id='upload-label-audio'>No file chosen</label>
+        </div>
+        <div>
+          <img id='audio-picked' class='no-display' alt='Chosen Audio' height='200'>
+        </div>
+        <div class='analyze-2'>
+          <button id='analyze-button-audio' class='analyze-button-audio' type='button' onclick='analyzeAudio()'>Analyze</button>
+        </div>
+        <div class='result-label'>
+          <table class="table-audio">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Accuracy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><label id='result-label-audio'></label></td>
+                <td><label id='result-accuracy-audio'></label></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
