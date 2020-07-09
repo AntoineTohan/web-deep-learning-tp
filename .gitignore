@@ -4,3 +4,5 @@ venv/
 song_test/
 
 .DS_Store
+
+export.plk
